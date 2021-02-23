@@ -1,17 +1,17 @@
-class Constructor_Overloading{
+class ConstructorOverloading{
  String name;
  String version;
  long downloads;
  int size;
  double rating;
  boolean ad;
-Constructor_Overloading(String n,String v, long d)
+ConstructorOverloading(String n,String v, long d)
     {   
     name=n;
     version =v;
     downloads=d; 
     }    
-Constructor_Overloading(String n,String v, long d, int s, double r,boolean a)
+ConstructorOverloading(String n,String v, long d, int s, double r,boolean a)
     {   
     name=n;
     version =v;
@@ -31,8 +31,8 @@ Constructor_Overloading(String n,String v, long d, int s, double r,boolean a)
    }  
    
     public static void main(String args[]){  
-    Constructor_Overloading a1 = new Constructor_Overloading("Teleport.Video","1.0.20201016",10000);  
-    Constructor_Overloading a2 = new Constructor_Overloading("Setmore Appointments","3.0.8.20210212",100000,24,4.5,false);
+    ConstructorOverloading a1 = new ConstructorOverloading("Teleport.Video","1.0.20201016",10000);  
+    ConstructorOverloading a2 = new ConstructorOverloading("Setmore Appointments","3.0.8.20210212",100000,24,4.5,false);
     a1.display();   
     a2.display(); 
    }  
