@@ -1,4 +1,4 @@
-class Task_Details implements Tasks {
+class TaskDetails implements Tasks {
   public void typing() {
     System.out.println("Practice Typing for 1 hour everyday");
   }
@@ -6,7 +6,7 @@ class Task_Details implements Tasks {
     System.out.println("Complete minimum 150 minutes of learning every week");
   }
   public static void main(String[] args) {
-    Task_Details t = new Task_Details();  
+    TaskDetails t = new TaskDetails();  
     t.typing();
     t.learning();
   }
