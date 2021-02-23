@@ -1,15 +1,15 @@
 class Employee{  
-int no_of_employees;     
-public int getNo_of_employees() {
- return no_of_employees;
+int noOfEmployees;     
+public int getNoOfEmployees() {
+ return noOfEmployees;
 }
 
-public void setNo_of_employees(int no_of_employees) {
- this.no_of_employees = no_of_employees;
+public void setNoOfEmployees(int noOfEmployees) {
+ this.noOfEmployees = noOfEmployees;
 }
-void display_employeedetails()
+void displayEmployeeDetails()
    {
-    System.out.println("Number of Employees:" +no_of_employees);    
+    System.out.println("Number of Employees:" +noOfEmployees);    
    }    
 
 }  
