@@ -1,4 +1,4 @@
-class This_Keyword{
+class ThisKeyword{
  String name;
  String version;
  long downloads;
@@ -6,7 +6,7 @@ class This_Keyword{
  float rating;
  boolean ad;
  
- This_Keyword(String name,String version, long downloads, int size, float rating,boolean ad)
+ ThisKeyword(String name,String version, long downloads, int size, float rating,boolean ad)
     {   
     this.name=name;
     this.version =version;
@@ -26,7 +26,7 @@ class This_Keyword{
    }  
    
     public static void main(String args[]){  
-    This_Keyword a1 = new This_Keyword("Teleport.Video","1.0.20201016",10000,32,4.5f,false);  
+    ThisKeyword a1 = new ThisKeyword("Teleport.Video","1.0.20201016",10000,32,4.5f,false);  
     a1.display();    
    }  
 }  
