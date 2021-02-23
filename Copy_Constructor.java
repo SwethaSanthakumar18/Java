@@ -1,4 +1,4 @@
-class Copy_Constructor{
+class CopyConstructor{
  String name;
  String version;
  long downloads;
@@ -6,7 +6,7 @@ class Copy_Constructor{
  double rating;
  boolean ad;
  
- Copy_Constructor(String n,String v, long d, int s, double r,boolean a)
+ CopyConstructor(String n,String v, long d, int s, double r,boolean a)
     {   
     name=n;
     version =v;
@@ -16,7 +16,7 @@ class Copy_Constructor{
     ad=a;  
     }  
 
-Copy_Constructor(Copy_Constructor c){  
+CopyConstructor(CopyConstructor c){  
     name=c.name;
     version =c.version;
     downloads=c.downloads;
@@ -35,8 +35,8 @@ Copy_Constructor(Copy_Constructor c){
    }  
    
     public static void main(String args[]){  
-    Copy_Constructor a1 = new Copy_Constructor("Teleport.Video","1.0.20201016",10000,32,4.5,false);
-    Copy_Constructor a2 = new Copy_Constructor(a1);  
+    CopyConstructor a1 = new CopyConstructor("Teleport.Video","1.0.20201016",10000,32,4.5,false);
+    CopyConstructor a2 = new CopyConstructor(a1);  
     a1.display(); 
     a2.display();   
    }  
