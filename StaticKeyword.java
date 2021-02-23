@@ -1,4 +1,4 @@
-class Static_Keyword{
+class StaticKeyword{
  String name;
  static String version="1.0.20201016";
  long downloads;
@@ -9,7 +9,7 @@ class Static_Keyword{
  static void update(){  
      version = "1.1.20201016";  
      }  
- Static_Keyword(String n, long d, int s, double r,boolean a)
+ StaticKeyword(String n, long d, int s, double r,boolean a)
     {   
     name=n;
     downloads=d;
@@ -28,8 +28,8 @@ class Static_Keyword{
    }  
    
     public static void main(String args[]){  
-    Static_Keyword.update();
-    Static_Keyword a1 = new Static_Keyword("Teleport.Video",10000,32,4.5,false);
+    StaticKeyword.update();
+    StaticKeyword a1 = new StaticKeyword("Teleport.Video",10000,32,4.5,false);
     a1.display();   
    }  
 }  
