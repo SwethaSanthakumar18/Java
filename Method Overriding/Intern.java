@@ -3,6 +3,6 @@ class Intern extends Tasks{
   
   public static void main(String args[]){  
   Intern obj = new Intern();  
-  obj.run();//calling method  
+  obj.run();
   }  
 }  
