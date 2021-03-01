@@ -47,7 +47,8 @@ list2.removeIf(str -> str.contains("Divya"));
 System.out.println("After using removeIf() method: "+list2);  
 list2.clear();  
 System.out.println("After using clear() method: "+list2); 
-  
+int element = list2.get(2);
+ System.out.println("The element at index 2 is: "+element); 
 }  
 }  
 }  
