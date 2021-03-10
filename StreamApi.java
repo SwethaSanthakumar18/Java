@@ -10,7 +10,7 @@ class StreamApi
                            collect(Collectors.toList()); 
     System.out.println(square); 
     List<String> names = 
-                Arrays.asList("Reflection","Collection","Stream"); 
+                Arrays.asList("Harish","Chanakya","Swetha"); 
     List<String> result = names.stream().filter(s->s.startsWith("S")). 
                           collect(Collectors.toList()); 
     System.out.println(result); 
