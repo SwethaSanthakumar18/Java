@@ -3,25 +3,28 @@ import java.io.*;
 import java.util.*; 
 public class ValidateCustomer
 {
-	public String name1;
-	public long num;
-  void validateCustomerDetails() throws IOException{
+   public String name1;
+   public long num;
+   
+   void validateCustomerDetails() throws IOException{
+   
    String customerFilePath = "C:/Users/Admin/Desktop/Intern/Java/AB/customerdata.txt";
    ArrayList<Long> arr = new ArrayList<Long>(); 
    ArrayList<String> arr1 = new ArrayList<String>(); 
    String line;
    int i=1;
    int count=0;
-     String[] customerName = new String[100];
-	 Long[] mobile = new Long[100];
+   String[] customerName = new String[100];
+   Long[] mobile = new Long[100];
    Scanner sc=new Scanner(System.in);
-System.out.println("Enter Username");
-name1 = sc.nextLine();
-System.out.println("Enter Password");
-num = sc.nextLong();
-int x=0;
+   System.out.println("Enter Username");
+   name1 = sc.nextLine();
+   System.out.println("Enter Password");
+   num = sc.nextLong();
+   int x=0;
    BufferedReader reader = new BufferedReader(new FileReader(customerFilePath));
-    while ((x < customerName.length) && (line = reader.readLine()) != null)
+   
+   while ((x < customerName.length) && (line = reader.readLine()) != null)
     {
         String[] parts = line.split(":", 2);
         if (parts.length >= 2)
@@ -31,14 +34,16 @@ int x=0;
 			arr.add(mobile[x]);
 			arr1.add(customerName[x]);
 			count++;
-        } else {
+        } 
+		else {
             System.out.println("ignoring line: " + line);
         }
     }
 	if(arr.contains(num) && arr1.contains(name1))
 	{
 		System.out.println("Login Successful");
-	}else{
+	}
+	else{
 		System.out.println("Invalid Username and Password");
 		System.exit(0); 
 	}
