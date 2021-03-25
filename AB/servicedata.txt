@@ -1,0 +1,13 @@
+Solar Energy Consultant,7500
+Home inspection service,3250
+Deep House Cleaning,2500
+Apartment Prepping,2500
+Dish Washing,1000
+Interior Decorations,5000
+Interior decorator,5000
+Garden Services,4000
+Home energy auditor,4500
+Personal Organiser,4500
+Handyman Services,3000
+Pool and Fountain Care,2750
+Floor Cleaning,400
